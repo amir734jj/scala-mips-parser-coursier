@@ -1,4 +1,4 @@
-import Register.{RegisterT, names}
+﻿import Register.{RegisterT, names}
 
 import scala.language.{implicitConversions, postfixOps}
 import scala.util.parsing.combinator.RegexParsers
