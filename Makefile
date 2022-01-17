@@ -1,5 +1,5 @@
-SRC = Register Token MipsParser PrettyPrinter Driver
 DRIVER = Driver
+SRC = Register Token MipsParser PrettyPrinter ${Driver}
 VERSION = "scala-parser-combinators_2.13:1.1.2"
 JARS = $(shell cs fetch org.scala-lang.modules:${VERSION} | grep "scala-parser-combinators")
 
