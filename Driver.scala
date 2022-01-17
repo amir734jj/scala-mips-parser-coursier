@@ -1,4 +1,4 @@
-﻿import scala.util.parsing.input.CharArrayReader
+import scala.util.parsing.input.CharArrayReader
 
 object Driver {
 

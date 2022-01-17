@@ -1,7 +1,7 @@
 SRC = Register Token MipsParser PrettyPrinter Driver
 DRIVER = Driver
 VERSION = "scala-parser-combinators_2.13:1.1.2"
-JARS = $(shell cs fetch org.scala-lang.modules:${VERSION})
+JARS = $(shell cs fetch org.scala-lang.modules:${VERSION} | grep "scala-parser-combinators")
 
 all: build run
 
@@ -13,7 +13,7 @@ build: $(addsuffix .class,$(SRC))
 
 .PHONY: run
 run: ${DRIVER}.class
-	scala ${DRIVER}
+	scala  -cp .:$(JARS) $(basename $<)
 
 .PHONY: clean
 clean:

@@ -1,4 +1,4 @@
-﻿class PrettyPrinter(val program: Program) {
+class PrettyPrinter(val program: Program) {
 
   var sb = new StringBuilder()
 
